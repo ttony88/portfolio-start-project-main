@@ -1,6 +1,6 @@
 import { FlexWrapper } from "../../../components/flex-wrapper/FlexWrapper";
-import { MyName } from "../../../components/my-name/MyName";
-import { MyPhoto } from "../../../components/my-photo/MyPhoto";
+import { MyName } from "./my-name/MyName";
+import { MyPhoto } from "./my-photo/MyPhoto";
 
 export function Main() {
      
