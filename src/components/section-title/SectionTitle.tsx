@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-type SectionHeadingPropsType = {
+type SectionTitlePropsType = {
     fontSize: string
 }
 
-export const SectionHeading = styled.h2<SectionHeadingPropsType>`
+export const SectionTitle = styled.h2<SectionTitlePropsType>`
    font-size: ${props => props.fontSize};
 `

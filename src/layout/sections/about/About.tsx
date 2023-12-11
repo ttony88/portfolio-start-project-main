@@ -1,13 +1,13 @@
 import styled from "styled-components"
-import { SectionHeading } from "../../../components/section-heading/SectionHeading"
+import { SectionTitle } from "../../../components/section-title/SectionTitle"
 
 export function About(){
 
     return(
         <AboutStyled>
-            <SectionHeading fontSize="42px">
+            <SectionTitle fontSize="42px">
                 About Me
-            </SectionHeading>
+            </SectionTitle>
             <DescriptionAbout>
                 The Generator App is an online tool that helps you to 
                 export ready-made templates ready to work as your future website. 

@@ -1,15 +1,15 @@
 import styled from "styled-components"
-import { SectionHeading } from "../../../components/section-heading/SectionHeading"
 import { Icon } from "../../../components/icon/Icon"
 import { FlexWrapper } from "../../../components/flex-wrapper/FlexWrapper"
+import { SectionTitle } from "../../../components/section-title/SectionTitle"
 
 export function Experience() {
     
     return(
         <SectionExperience>
-            <SectionHeading fontSize="42px">
+            <SectionTitle fontSize="42px">
                 Work Experience
-            </SectionHeading>
+            </SectionTitle>
             
                     <FlexWrapper justify="space-between">
                         <div>
