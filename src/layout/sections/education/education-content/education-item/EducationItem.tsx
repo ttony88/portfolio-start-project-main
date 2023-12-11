@@ -3,10 +3,13 @@ import { ButtonLink } from "../../../../../components/button-link/ButtonLink";
 import { FlexWrapper } from "../../../../../components/flex-wrapper/FlexWrapper";
 import { IntervalDate } from "../../../../../components/interval-date/IntervalDate";
 import { Place } from "../../../../../components/place/Place";
+import { ItemTitle } from "../../../../../components/item-title/ItemTitle";
 
 type EducationItemPropsType = {
     placeName: string
     iconId?: string
+    interval: string
+    itemTitle: string
 }
 
 export function EducationItem(props: EducationItemPropsType) {
@@ -15,7 +18,7 @@ export function EducationItem(props: EducationItemPropsType) {
         <li>
             <FlexWrapper justify="space-between">
                 <div>
-                    <h3>Engineer</h3>
+                    <ItemTitle>{props.itemTitle}</ItemTitle>
                     <PlaceOfStudy>
                         <Place placeName={props.placeName}
                                iconId={props.iconId || "office"} />
@@ -23,7 +26,7 @@ export function EducationItem(props: EducationItemPropsType) {
                 </div>
                 <div>
                     <ButtonLink href="#">Full Time</ButtonLink>  
-                    <IntervalDate interval="Sep 2005 - May 2010" />
+                    <IntervalDate interval={props.interval} />
                 </div>
             </FlexWrapper>
         </li>
