@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import myPhoto from "../../assets/img/my-photo.jpeg"
+import myPhoto from "../../../../assets/img/my-photo.webp"
 
 export function MyPhoto() {
 
