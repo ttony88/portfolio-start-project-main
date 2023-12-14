@@ -6,6 +6,7 @@ import { Experience } from './layout/sections/experience/Experience';
 import { Main } from './layout/sections/main/Main';
 import imgDrawing from './assets/img/drawing.svg'
 import { Education } from './layout/sections/education/Education';
+import { Skills } from './layout/skills/Skills';
 
 function App() {
     return (
@@ -22,6 +23,7 @@ function App() {
                 <use xlinkHref={`${imgDrawing}#${"driwing"}`} />
             </svg>
             </FlexWrapper>
+            <Skills />
         </div>
     );
 }
