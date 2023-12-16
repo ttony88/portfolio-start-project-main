@@ -16,6 +16,7 @@ import imgProject_5 from "./assets/img/img-projects/project-5.jpeg"
 import imgProject_6 from "./assets/img/img-projects/project-6.jpeg"
 import styled from 'styled-components';
 import { Mail } from './layout/sections/mail/Mail';
+import { Footer } from './layout/footer/Footer';
 
 const projectsInfo = [
     {
@@ -87,6 +88,7 @@ function App() {
                 <Skills />
                 <Projects projectsInfo={projectsInfo}/>
                 <Mail />
+                <Footer />
             </Container>
             
         </div>
