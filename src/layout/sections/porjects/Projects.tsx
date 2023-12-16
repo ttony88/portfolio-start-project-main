@@ -26,14 +26,15 @@ export function Projects(props: ProjectsPropsType) {
                  Things I’ve built so far
             </SectionSubtitle>
             <FlexWrapper wrap="wrap">
-                {props.projectsInfo.map(i => {
+                {props.projectsInfo.map((i, index) => {
                     return(
                         <Project img={i.imgProject}
                                  title={i.titleProject}
                                  description={i.descriptionProject}
                                  linkPreview={i.linkPreview}
                                  linkCode={i.linkCode} 
-                                 techStack={i.techStack}/>
+                                 techStack={i.techStack}
+                                 key={index}/>
                     )
                 })}
             </FlexWrapper>

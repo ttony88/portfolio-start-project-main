@@ -19,7 +19,7 @@ export function Project(props: ProjectPropsType) {
             <TitleProject>{props.title}</TitleProject>
             <DescriptionProject>{props.description}</DescriptionProject>
             <TechStack>{props.techStack}</TechStack>
-            <FlexWrapper>
+            <FlexWrapper justify="space-between">
                 <LinkProject link={props.linkPreview} 
                              iconId="link-chain"
                              nameLink="Live Preview" />
