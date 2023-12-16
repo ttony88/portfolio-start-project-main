@@ -15,6 +15,7 @@ import imgProject_4 from "./assets/img/img-projects/project-4.jpeg"
 import imgProject_5 from "./assets/img/img-projects/project-5.jpeg"
 import imgProject_6 from "./assets/img/img-projects/project-6.jpeg"
 import styled from 'styled-components';
+import { Mail } from './layout/sections/mail/Mail';
 
 const projectsInfo = [
     {
@@ -85,6 +86,7 @@ function App() {
                 </FlexWrapper>
                 <Skills />
                 <Projects projectsInfo={projectsInfo}/>
+                <Mail />
             </Container>
             
         </div>
