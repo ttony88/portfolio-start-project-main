@@ -23,7 +23,7 @@ export function Projects(props: ProjectsPropsType) {
                 Projects
             </SectionTitle>
             <SectionSubtitle>
-                 Things I’ve built so far
+                 Things I've built so far
             </SectionSubtitle>
             <FlexWrapper wrap="wrap">
                 {props.projectsInfo.map((i, index) => {
