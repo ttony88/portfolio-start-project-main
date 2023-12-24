@@ -3,19 +3,20 @@ import { SectionTitle } from "../../../components/section-title/SectionTitle";
 import { SectionSubtitle } from "../../../components/section-subtitle/SectionSubtitle";
 import { Skill } from "./skill/Skill";
 import { Container } from "../../../components/container/Container";
+import { GridWrapper } from "../../../components/grid-wrapper/GridWrapper";
 
 export function Skills() {
 
     return (
       <SectionSkills>
         <Container>
-          <SectionTitle fontSize="48px" textAlign="center" margin="0 0 50px ">
+          <SectionTitle fontSize="48px" textAlign="center" marginBottom="50px ">
             My Tech Stack
           </SectionTitle>
           <SectionSubtitle>
             Technologies I’ve been working with recently
           </SectionSubtitle>
-          <Grid>
+          <GridWrapper columnsRepeat="4, 1fr" rowsRepeat="2, 150px">
             <Skill iconId="html" />
             <Skill iconId="css" />
             <Skill iconId="react" />
@@ -24,7 +25,7 @@ export function Skills() {
             <Skill iconId="js" />
             <Skill iconId="redux" />
             <Skill iconId="vscode" />
-          </Grid>
+          </GridWrapper>
         </Container>
       </SectionSkills>
     );
@@ -32,11 +33,4 @@ export function Skills() {
 
 const SectionSkills = styled.section`
     margin-bottom: 215px;
-`
-const Grid =styled.div`
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 150px);
-    justify-content: center;
-    justify-items: center;
 `
