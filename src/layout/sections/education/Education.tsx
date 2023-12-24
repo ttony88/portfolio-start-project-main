@@ -8,7 +8,7 @@ export function Education() {
     return (
       <Container>
         <SectionEducation>
-          <SectionTitle fontSize="42px" margin="0 0 38px">Education</SectionTitle>
+          <SectionTitle fontSize="42px" marginBottom="38px">Education</SectionTitle>
           <EducationContent />
         </SectionEducation>
       </Container>
