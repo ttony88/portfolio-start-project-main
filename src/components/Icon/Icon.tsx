@@ -5,11 +5,14 @@ type IconPropsType = {
     width?: string
     height?: string
     viewBox?: string
+    fill?: string
 }
 
 export function Icon(props:IconPropsType){
     return(
-        <svg width={props.width || "120"} height={props.height || "120"} viewBox={props.viewBox || "0 0 120 120"} fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={props.width || "120"} height={props.height || "120"} 
+                    viewBox={props.viewBox || "0 0 120 120"} xmlns="http://www.w3.org/2000/svg"
+                    fill={props.fill || "#000000"}>
             <use xlinkHref={`${iconsSprite}#${props.iconId}`}/>
         </svg>
     )

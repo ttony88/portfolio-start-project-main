@@ -4,7 +4,9 @@ import myPhoto from "../../../../assets/img/my-photo.webp"
 export function MyPhoto() {
 
     return(
-        <PhotoStyled src={myPhoto} alt="photo" />
+        <WrapperPhoto>
+            <PhotoStyled src={myPhoto} alt="photo" />
+        </WrapperPhoto>
     )
 }
 
@@ -12,6 +14,12 @@ const PhotoStyled = styled.img`
     width: 350px;
     height: 350px;
     object-fit: cover;
+    padding: 9px;
     border-radius: 50%;
-    border: 9px solid rgba(231, 15, 170, 1);
+    
+`
+const WrapperPhoto = styled.div`
+    border-radius: 50%;
+    background-image: linear-gradient(rgba(231, 15, 170, 1), rgba(0, 192, 253, 1));
+    overflow: hidden;
 `

@@ -1,24 +1,27 @@
 import styled from "styled-components"
-import { Icon } from "../../components/icon/Icon"
 import { NavBar } from "../../components/nav-bar/NavBar"
 import { NavLinksSocial } from "../../components/nav-link-social/NavLinksSocial"
 import { FlexWrapper } from "../../components/flex-wrapper/FlexWrapper"
 import { Logo } from "../../components/logo/Logo"
+import { Container } from "../../components/container/Container"
 
 export function Header(){
 
-    return(
-        <HeaderStyled>
+    return (
+      <HeaderStyled>
+        <Container>
+          <FlexWrapper justify="space-between">
             <Logo />
-            <FlexWrapper>
-                <NavBar />
-                <NavLinksSocial />
+            <FlexWrapper align="center">
+              <NavBar />
+              <NavLinksSocial />
             </FlexWrapper>
-        </HeaderStyled>
-    )
+          </FlexWrapper>
+        </Container>
+      </HeaderStyled>
+    );
 }
 
 const HeaderStyled = styled.header`
-    display: flex;
-    justify-content: space-between;
+    margin: 40px 0 220px;
 `

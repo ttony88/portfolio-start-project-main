@@ -1,9 +1,8 @@
 import styled from "styled-components";
-import { ButtonLink } from "../../../../../components/button-link/ButtonLink";
 import { FlexWrapper } from "../../../../../components/flex-wrapper/FlexWrapper";
-import { IntervalDate } from "../../../../../components/interval-date/IntervalDate";
-import { Place } from "../../../../../components/place/Place";
-import { ItemTitle } from "../../../../../components/item-title/ItemTitle";
+import { IntervalDate } from "../../../../../components/list-item/interval-date/IntervalDate";
+import { Place } from "../../../../../components/list-item/place/Place";
+import { ItemTitle } from "../../../../../components/list-item/item-title/ItemTitle";
 
 type EducationItemPropsType = {
     placeName: string
@@ -25,7 +24,7 @@ export function EducationItem(props: EducationItemPropsType) {
                     </PlaceOfStudy>
                 </div>
                 <div>
-                    <ButtonLink href="#">Full Time</ButtonLink>  
+                     
                     <IntervalDate interval={props.interval} />
                 </div>
             </FlexWrapper>

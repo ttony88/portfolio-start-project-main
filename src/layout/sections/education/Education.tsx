@@ -1,28 +1,21 @@
 import styled from "styled-components";
-import { FlexWrapper } from "../../../components/flex-wrapper/FlexWrapper";
 import { SectionTitle } from "../../../components/section-title/SectionTitle";
-import { Icon } from "../../../components/icon/Icon"
-import { PlaceOfWork } from "../experience/Experience";
-import { Place } from "../../../components/place/Place";
-import { ButtonLink } from "../../../components/button-link/ButtonLink";
-import { IntervalDate } from "../../../components/interval-date/IntervalDate";
 import { EducationContent } from "./education-content/EducationContent";
+import { Container } from "../../../components/container/Container";
 
 export function Education() {
 
-    return(
+    return (
+      <Container>
         <SectionEducation>
-            <SectionTitle fontSize="42px">
-                Education
-            </SectionTitle>
-            <EducationContent />
+          <SectionTitle fontSize="42px" margin="0 0 38px">Education</SectionTitle>
+          <EducationContent />
         </SectionEducation>
-    )
+      </Container>
+    );
 }
 
 const SectionEducation = styled.section`
-    
-`
-
-const PlaceOfStudy = styled(PlaceOfWork)`
+    width: 60%;
+    margin-bottom: 200px;
 `

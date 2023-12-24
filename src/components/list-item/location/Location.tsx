@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Icon } from "../icon/Icon";
+import { Icon } from "../../icon/Icon";
+import { FlexWrapper } from "../../flex-wrapper/FlexWrapper";
 
 type LocationPropsType = {
     iconId?: string
@@ -9,14 +9,10 @@ type LocationPropsType = {
 export function Location(props: LocationPropsType) {
 
     return(
-        <LocationStyled>
+        <FlexWrapper>
             <Icon iconId={props.iconId || "location"} width="16" height="12" viewBox="0 0 16 12" />
             <span>{props.locationName}</span>
-        </LocationStyled>
+        </FlexWrapper>
         
     )
 }
-
-const LocationStyled = styled.div`
-    display: flex;
-`

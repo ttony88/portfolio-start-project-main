@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { Icon } from "../../../components/icon/Icon"
+import { Icon } from "../../../../components/icon/Icon"
 
 type SkillPropsType = {
     iconId: string
@@ -21,7 +21,5 @@ export function Skill(props: SkillPropsType) {
 }
 
 const SkillStyled = styled.div`
-    width: 25%;
-    display: flex;
-    justify-content: center;
+    
 `

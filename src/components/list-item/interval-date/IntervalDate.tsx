@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { Icon } from "../icon/Icon"
+import { Icon } from "../../icon/Icon"
 
 type IntervalDatePropsType = {
     iconId?: string

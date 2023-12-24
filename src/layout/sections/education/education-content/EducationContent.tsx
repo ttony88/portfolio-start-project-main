@@ -1,12 +1,14 @@
-import { EducationItem } from "./education-item/EducationItem";
+import { ListItem } from "../../../../components/list-item/ListItem";
 
 export function EducationContent() {
     
     return(
         <ul>
-            <EducationItem placeName="Modern Technical Institute"
-                           interval="Sep 2005 - May 2010"
-                           itemTitle="Engineer"/>
+            <ListItem placeName="Modern Technical Institute"
+                      interval="Sep 2005 - May 2010"
+                      itemTitle="Engineer"
+                      locationName="Ryazan"
+                      textButton="Full Time" />
         </ul>
     )
 }

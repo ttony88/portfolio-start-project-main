@@ -1,12 +1,11 @@
 import './App.css';
-import { FlexWrapper } from './components/flex-wrapper/FlexWrapper';
 import { Header } from './layout/header/Header';
 import { About } from './layout/sections/about/About';
 import { Experience } from './layout/sections/experience/Experience';
 import { Main } from './layout/sections/main/Main';
-import imgDrawing from './assets/img/drawing.svg'
+import imgDriwing from './assets/img/drawing.svg';
 import { Education } from './layout/sections/education/Education';
-import { Skills } from './layout/skills/Skills';
+import { Skills } from './layout/sections/skills/Skills';
 import { Projects } from './layout/sections/porjects/Projects';
 import imgProject_1 from "./assets/img/img-projects/project-1.jpeg"
 import imgProject_2 from "./assets/img/img-projects/project-2.jpeg"
@@ -14,9 +13,9 @@ import imgProject_3 from "./assets/img/img-projects/project-3.jpeg"
 import imgProject_4 from "./assets/img/img-projects/project-4.jpeg"
 import imgProject_5 from "./assets/img/img-projects/project-5.jpeg"
 import imgProject_6 from "./assets/img/img-projects/project-6.jpeg"
-import styled from 'styled-components';
 import { Mail } from './layout/sections/mail/Mail';
 import { Footer } from './layout/footer/Footer';
+import styled from 'styled-components';
 
 const projectsInfo = [
     {
@@ -71,33 +70,38 @@ const projectsInfo = [
 
 function App() {
     return (
-        <div className="App">
-            <Container>
-                <Header />
-                <Main />
-                <FlexWrapper>
-                <div>
-                    <About />
-                    <Experience />
-                    <Education />
-                </div>
-                <svg width="621" height="1019" viewBox="0 0 621 1019" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <use xlinkHref={`${imgDrawing}#${"driwing"}`} />
-                </svg>
-                </FlexWrapper>
-                <Skills />
-                <Projects projectsInfo={projectsInfo}/>
-                <Mail />
-                <Footer />
-            </Container>
-            
-        </div>
+      <div className="App">
+        <Header />
+        <Main />
+        <Info>
+            <About />
+            <Experience />
+            <Education />
+        </Info>
+        <Skills />
+        <Projects projectsInfo={projectsInfo} />
+        <Mail />
+        <Footer />
+      </div>
     );
 }
 
-const Container = styled.div`
-    width: 1204px;
-    margin: 0 auto;
+const Info = styled.div`
+    position: relative;
+    
+    &::before{
+        content: "";
+        display: block;
+        width: 400px;
+        height: 600px;
+        background-image: url(${imgDriwing});
+        background-size: cover;
+
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0, -50%)
+    }
 `
 
 export default App;
