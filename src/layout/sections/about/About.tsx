@@ -7,7 +7,7 @@ export function About(){
     return (
       <Container>
         <AboutStyled>
-          <SectionTitle fontSize="42px" margin="0 0 38px">
+          <SectionTitle fontSize="42px" marginBottom="38px">
             About Me
           </SectionTitle>
           <DescriptionAbout>
