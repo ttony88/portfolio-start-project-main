@@ -21,5 +21,8 @@ export function LinkProject(props: LinkPriviewPropstype) {
 }
 
 const LinkPriviewStyled = styled.a`
-    
+    font-size: 16px;
+    font-weight: 400; 
+    text-decoration-line: underline;
+    color: #000;
 `
