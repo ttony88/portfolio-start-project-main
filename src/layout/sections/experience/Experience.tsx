@@ -8,7 +8,7 @@ export function Experience() {
     return (
       <Container>
         <SectionExperience>
-          <SectionTitle fontSize="42px" margin="0 0 38px">
+          <SectionTitle fontSize="42px" marginBottom="38px">
             Work Experience
           </SectionTitle>
           <ExperienceContent />
