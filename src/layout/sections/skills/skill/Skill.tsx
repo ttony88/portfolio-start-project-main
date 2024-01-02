@@ -13,7 +13,7 @@ export function Skill(props: SkillPropsType) {
     return(
         <SkillStyled>
             <Icon iconId={props.iconId} 
-                  viewBox={props.viewBox}
+                  viewBox={props.viewBox} 
                   width={props.width}
                   height={props.height} />
         </SkillStyled>

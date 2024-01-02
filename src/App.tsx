@@ -68,6 +68,18 @@ const projectsInfo = [
     },
 ]
 
+const skillsInfo = [
+    {name: "html"},
+    {name: "css"},
+    {name: "react"},
+    {name: "gitIcon",
+     viewBox: "0 0 24 24"},
+    {name: "sass"},
+    {name: "js"},
+    {name: "redux"},
+    {name: "vscode"},
+]
+
 function App() {
     return (
       <div className="App">
@@ -78,7 +90,7 @@ function App() {
             <Experience />
             <Education />
         </Info>
-        <Skills />
+        <Skills skillsInfo={skillsInfo} />
         <Projects projectsInfo={projectsInfo} />
         <Mail />
         <Footer />

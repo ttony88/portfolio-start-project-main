@@ -5,7 +5,14 @@ import { Skill } from "./skill/Skill";
 import { Container } from "../../../components/container/Container";
 import { GridWrapper } from "../../../components/grid-wrapper/GridWrapper";
 
-export function Skills() {
+type SkillsPropsType = {
+  skillsInfo: Array<{
+    name: string,
+    viewBox?: string,
+  }>
+}
+
+export function Skills(props: SkillsPropsType) {
 
     return (
       <SectionSkills>
@@ -16,21 +23,22 @@ export function Skills() {
           <SectionSubtitle>
             Technologies I’ve been working with recently
           </SectionSubtitle>
-          <GridWrapper columnsRepeat="4, 1fr" rowsRepeat="2, 150px">
-            <Skill iconId="html" />
-            <Skill iconId="css" />
-            <Skill iconId="react" />
-            <Skill iconId="gitIcon" viewBox="0 0 24 24" />
-            <Skill iconId="sass" />
-            <Skill iconId="js" />
-            <Skill iconId="redux" />
-            <Skill iconId="vscode" />
+          <GridWrapper columnsRepeat="4, 120px"
+                       justifyContent="space-between" 
+                       rowGap="50px">
+            {props.skillsInfo.map(i => {
+              return(
+                <Skill iconId={i.name} viewBox={i.viewBox} />
+              )
+            })}
           </GridWrapper>
         </Container>
       </SectionSkills>
     );
 }
 
-const SectionSkills = styled.section`
-    margin-bottom: 215px;
+const SectionSkills = styled.section.attrs(() => ({
+  id: "Skills"
+}))`
+    padding-top: 215px;
 `
