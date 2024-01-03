@@ -21,7 +21,10 @@ export function About(){
     );
 }
 
-const AboutStyled = styled.section`
+const AboutStyled = styled.section.attrs(() => ({
+  id: "About"
+}))`
+    padding-top: 200px;
     margin-bottom: 38px;
     width: 60%;
 `

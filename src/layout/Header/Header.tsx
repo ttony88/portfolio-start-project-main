@@ -23,5 +23,11 @@ export function Header(){
 }
 
 const HeaderStyled = styled.header`
-    margin: 40px 0 220px;
+    padding: 40px 0 40px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #ffffff;
+
 `

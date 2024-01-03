@@ -15,7 +15,10 @@ export function Mail() {
     )
 }
 
-const MailStyled = styled.section`
+const MailStyled = styled.section.attrs(() => ({
+    id: "Contact"
+  }))`
+    padding-top: 185px;
     margin-bottom: 200px;
     text-align: center;
     font-family: DM Sans;

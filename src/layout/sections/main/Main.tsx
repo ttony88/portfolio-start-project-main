@@ -19,5 +19,5 @@ export function Main() {
 }
 
 const MainStyled = styled.main`
-    margin-bottom: 200px;
+    margin-top: 280px;
 `

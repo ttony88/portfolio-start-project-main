@@ -9,19 +9,20 @@ export function NavLinksSocial() {
             <ul>
                 <li>
                     <a href="#">
-                        <Icon iconId="github" width="30" height="30" viewBox="0 0 30 30" fill={thema.colors.socialLink} />
+                        <Icon iconId="github" width="30" height="30" viewBox="0 0 30 30" 
+                              fill={thema.colors.socialLink} />
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <Icon iconId="twitter" width="33" height="33" viewBox="0 0 33 33" 
-                        fill={thema.colors.socialLink} />
+                              fill={thema.colors.socialLink} />
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <Icon iconId="linkedin" width="30" height="30" viewBox="0 0 30 30" 
-                        fill={thema.colors.socialLink} />
+                              fill={thema.colors.socialLink} />
                     </a>
                 </li>
             </ul>

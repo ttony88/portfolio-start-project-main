@@ -17,5 +17,4 @@ export function Education() {
 
 const SectionEducation = styled.section`
     width: 60%;
-    margin-bottom: 200px;
 `

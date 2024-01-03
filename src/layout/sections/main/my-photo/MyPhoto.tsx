@@ -19,6 +19,8 @@ const PhotoStyled = styled.img`
     
 `
 const WrapperPhoto = styled.div`
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     background-image: linear-gradient(rgba(231, 15, 170, 1), rgba(0, 192, 253, 1));
     overflow: hidden;

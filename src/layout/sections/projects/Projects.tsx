@@ -27,7 +27,7 @@ export function Projects(props: ProjectsPropsType) {
             <SectionSubtitle>
                  Things I've built so far
             </SectionSubtitle>
-            <GridWrapper columnsRepeat="3, 1fr" rowsRepeat="2" columnGap="35px" rowGap="60px">
+            <GridWrapper columnsRepeat="3, 1fr" columnGap="35px" rowGap="60px">
                 {props.projectsInfo.map((i, index) => {
                     return (
                       <Project
@@ -48,6 +48,8 @@ export function Projects(props: ProjectsPropsType) {
     )
 }
 
-const ProjectsStyled = styled.section`
-    margin-bottom: 185px;
+const ProjectsStyled = styled.section.attrs(() => ({
+    id: "Projects"
+  }))`
+    padding-top: 215px;
 `
