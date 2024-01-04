@@ -9,7 +9,7 @@ export function Main() {
     return (
       <MainStyled>
         <Container>
-          <FlexWrapper justify="space-between">
+          <FlexWrapper justify="space-between" wrap="wrap">
             <Greeting />
             <MyPhoto />
           </FlexWrapper>

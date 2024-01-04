@@ -1,9 +1,10 @@
 import styled from "styled-components"
-import { NavBar } from "../../components/nav-bar/NavBar"
 import { NavLinksSocial } from "../../components/nav-link-social/NavLinksSocial"
 import { FlexWrapper } from "../../components/flex-wrapper/FlexWrapper"
 import { Logo } from "../../components/logo/Logo"
 import { Container } from "../../components/container/Container"
+import { HeaderMenu } from "./header-menu/HeaderMenu"
+import { MobileMenu } from "./mobile-menu/MobileMenu"
 
 export function Header(){
 
@@ -13,8 +14,9 @@ export function Header(){
           <FlexWrapper justify="space-between">
             <Logo />
             <FlexWrapper align="center">
-              <NavBar />
+              <HeaderMenu />
               <NavLinksSocial />
+              <MobileMenu/>
             </FlexWrapper>
           </FlexWrapper>
         </Container>

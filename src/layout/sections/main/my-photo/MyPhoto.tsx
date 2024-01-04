@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import myPhoto from "../../../../assets/img/my-photo.webp"
+import { thema } from "../../../../styles/Thema"
 
 export function MyPhoto() {
 
@@ -16,7 +17,12 @@ const PhotoStyled = styled.img`
     object-fit: cover;
     padding: 9px;
     border-radius: 50%;
-    
+    filter: grayscale(100%);
+
+    @media ${thema.media.miniDesktop}{
+        width: 282px;
+        height: 282px;
+    }
 `
 const WrapperPhoto = styled.div`
     width: 350px;
@@ -24,4 +30,10 @@ const WrapperPhoto = styled.div`
     border-radius: 50%;
     background-image: linear-gradient(rgba(231, 15, 170, 1), rgba(0, 192, 253, 1));
     overflow: hidden;
+
+    @media ${thema.media.miniDesktop}{
+        width: 282px;
+        height: 282px;
+    }
+
 `

@@ -6,7 +6,7 @@ import { Main } from './layout/sections/main/Main';
 import imgDriwing from './assets/img/drawing.svg';
 import { Education } from './layout/sections/education/Education';
 import { Skills } from './layout/sections/skills/Skills';
-import { Projects } from './layout/sections/porjects/Projects';
+import { Projects } from './layout/sections/projects/Projects';
 import imgProject_1 from "./assets/img/img-projects/project-1.jpeg"
 import imgProject_2 from "./assets/img/img-projects/project-2.jpeg"
 import imgProject_3 from "./assets/img/img-projects/project-3.jpeg"
