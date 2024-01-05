@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { SectionTitle } from "../../../components/section-title/SectionTitle"
+import { font } from "../../../styles/common"
 
 export function Mail() {
 
@@ -24,12 +25,9 @@ const MailStyled = styled.section.attrs(() => ({
     font-family: DM Sans;
 `
 const MyMail = styled.a`
+    ${font({family: "DM Sans", weight: 700, color: "transparent", lineHeight: 2, Fmax: 58, Fmin: 28})};
     background-image: linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%);
     background-clip: text;
-    color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 58px;
-    font-weight: 700;
-    line-height: 2;
 `

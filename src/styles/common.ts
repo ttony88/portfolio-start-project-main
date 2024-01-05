@@ -1,4 +1,4 @@
-import { thema } from "./styles/Thema"
+import { thema } from "./Thema"
 
 type FontPropsType = {
     family?: string
