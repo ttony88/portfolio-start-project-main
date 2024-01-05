@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { font } from "../../../../styles/common"
 
 export function Greeting() {
     return(
@@ -16,11 +17,7 @@ export function Greeting() {
 
 const GreetingStyled = styled.div`
     h1, h2{
-        font-size: 48px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 70px; 
-        letter-spacing: -1px;
+        ${font({weight: 700, lineHeight: 1.5, Fmax: 48, Fmin: 24})};
     }
     
 `
